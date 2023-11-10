@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import "./VideoCallComponent";
 
 const Room = (props) => {
   const userVideo = useRef();
@@ -137,8 +136,8 @@ const Room = (props) => {
 
   return (
     <div>
-      <video autoPlay controls={true} ref={userVideo} className="fullscreen-video "></video>
-      <video autoPlay controls={true} ref={partnerVideo} className="small-video"></video>
+      <video autoPlay controls={true} ref={userVideo}></video>
+      <video autoPlay controls={true} ref={partnerVideo}></video>
     </div>
   );
 };

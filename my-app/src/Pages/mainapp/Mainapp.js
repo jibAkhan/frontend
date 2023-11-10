@@ -3,6 +3,8 @@ import Navbar from '../../Components/Navbar/ Navbar';
 import Languagetags from '../../Components/LanguageTags/Languagetags';
 import VideoCallComponent from '../../Components/VideoCallComponent/VideoCallComponent';
 import Popup from '../../Components/Popup';
+import CreateRoom from '../home/CreateRoom';
+
 
 export default function Mainapp() {
 	return (
@@ -15,6 +17,7 @@ export default function Mainapp() {
 			<Navbar />
 			<Languagetags items={["english","spanish"]} />
 			<VideoCallComponent/>
+			<CreateRoom/>
 			<Popup msg="Would you like to send a friend request? " showPopup={true} />
 		</div>
 	);
