@@ -17,7 +17,7 @@ export default function Mainapp() {
 			<Languagetags items={["ENGLISH","SPANISH"]} />
 			<VideoCallComponent/>
 			<Popup msg="Would you like to send a friend request? " showPopup={true} />
-			<Footer /> {"test"}
+			<Footer /> 
 		</div>
 	);
 }
