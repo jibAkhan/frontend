@@ -6,3 +6,22 @@
 	display: block;
 	margin: 10px;
 }
+
+/* Languagetags.scss */
+
+.tag {
+	background-color: #999999;
+	color: #000000;
+	border-radius: 4px;
+	padding: 5px 10px;
+	margin: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	border: 1px solid black;
+  }
+  
+  .tag:hover {
+	background-color: #e6e0ce;
+  }
+  
