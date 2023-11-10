@@ -1,4 +1,5 @@
 import React from 'react'
+import scss from "./Popup.scss"
 export default function Popup(props) {
   //const [showPopup, SetShowPopup]
   
@@ -11,8 +12,10 @@ return (
         <div className="popup">
           <div className="popup-content">
 					<span>{props.msg}</span>
-            <button onClick={props.yesFunction}>Yes</button>
-            <button onClick={props.noFunction}>No</button>
+            <div className = "buttonWrapper">
+              <button name = "yes" onClick={props.yesFunction}>YES</button>
+              <button name = "no" onClick={props.noFunction}>NO</button>
+            </div>
           </div>
         </div>
       )}
