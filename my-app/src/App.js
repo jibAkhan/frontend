@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Room from './Components/VideoCallComponent/Room';
+import Room from './Components/VideoCall/Room';
 import ErrorPage from './Pages/404Page/404';
 
 
