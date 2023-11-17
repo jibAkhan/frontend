@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Room from './Components/VideoCallComponent/Room';
 
 
 const Mainapp = lazy(() => import('./Pages/mainapp/Mainapp'));
@@ -13,6 +14,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/app" element={<Mainapp />}/>
+				<Route path="/room/:roomID" caseSensitive={false} element={<Room />} />
 			</Routes>
 		</Router>
 	);
