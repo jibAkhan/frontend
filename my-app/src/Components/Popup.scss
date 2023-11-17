@@ -1,0 +1,41 @@
+.popup{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(22,25,41);
+    width: 35%;
+    font-size: 40px;
+    text-align:center;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 16px;
+    box-shadow: 10px 10px rgb(95, 96, 106);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.buttonWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border-radius: 15px;
+    padding: 14px 40px;
+    font-size:20px;
+    margin: 25px 60px 0px 60px;
+}
+
+button[name="yes"]{
+    background-color: rgb(12,15,86);
+    color: white;
+}
+
+button[name="no"]{
+    background-color: rgb(235,87,87);
+    color: black;
+}
