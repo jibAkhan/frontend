@@ -3,7 +3,11 @@ import React from 'react'
 //Const Home = () +
 export default function Home() {
   return (
-	 <div>home</div>
+	 <div>home
+<button onClick={null}>Join</button>
+      
+   </div>
+
   )
 }
 

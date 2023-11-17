@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-const CreateRoom = (props) => {
+const CreateRoom = ({ setRoomID }) => {
   const navigate = useNavigate();
 
   const create = async (e) => {
@@ -10,7 +10,8 @@ const CreateRoom = (props) => {
 
     const resp = await fetch("http://localhost:8000/create");
     const { room_id } = await resp.json();
-    navigate(`/room/${room_id}`);
+    setRoomID(room_id)
+    //navigate(`/room/${room_id}`);
   };
 
   return (
