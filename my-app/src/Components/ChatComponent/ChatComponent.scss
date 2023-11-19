@@ -1,0 +1,39 @@
+.input{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 25px;
+    color: black;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+.chat-panel{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    margin: 25px;
+    color: black;
+    height: 40px;
+    padding:8px;
+    box-sizing: border-box;
+}
+
+.chatbox-outgoing{
+    background-color: rgb(212, 212, 212, .3);
+    border-radius: 15px 15px 0px 15px;
+    padding:20px 16px;
+    margin-bottom: 10px;
+
+}
+
+.chatbox-incoming{
+    background-color: rgba(8, 4, 23, 0.3);
+    border-radius: 15px 15px 15px 0px;
+    padding: 20px 16px;
+    margin-bottom: 10px;
+}

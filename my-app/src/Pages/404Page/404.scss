@@ -1,0 +1,33 @@
+.page-404-Error{
+/*
+add a temporal image for the entire page
+*/
+background-color: aqua;
+}
+.message{
+    text-align:center;
+}
+.message h1{
+    font-size: 7rem;
+}
+.message p{
+    font-size:40px;
+}
+.home-btn-wrapper{
+    justify-content: center;
+    text-align: center;
+}
+button[name="home"]
+{
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+    font-size: 20px;
+    margin: 25px 60px 25px 60px;
+    background-color: white;
+    border: 2px solid black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+button[name="home"]:hover{
+    background-color: black;
+    color:white;
+}

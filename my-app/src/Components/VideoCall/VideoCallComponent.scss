@@ -1,0 +1,42 @@
+/* Room.css */
+.fullscreen-video {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: 1; 
+}
+  
+.small-video {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #ccc;
+    z-index: 2; 
+}
+
+
+
+$button-purple: #2f09ab; // Adjust the shade of purple as needed
+
+.button {
+  background-color: rgba($button-purple, 0.5); // Adjust the alpha (transparency) value as needed
+  color: #000; // Black text
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba($button-purple, 0.7); // Adjust hover transparency
+  }
+}
+
+
+
+
+
+  
