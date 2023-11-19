@@ -8,7 +8,7 @@ import ErrorPage from './Pages/404Page/404';
 
 const Mainapp = lazy(() => import('./Pages/mainapp/Mainapp'));
 const Home = lazy(() => import('./Pages/home/Home'));
-const NavBar = lazy(() => import('./Components/NavBar/NavBar'));
+const NavBar = lazy(() => import('./Components/Navbar/NavBar'));
 
 function App() {
 	return (

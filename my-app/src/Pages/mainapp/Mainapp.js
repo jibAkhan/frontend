@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../../Components/Navbar/ Navbar';
+import Navbar from '../../Components/Navbar/NavBar';
 import Languagetags from '../../Components/LanguageTags/Languagetags';
 import VideoCallComponent from '../../Components/VideoCall/VideoCallComponent';
 import Room from '../../Components/VideoCall/Room'
@@ -18,7 +18,6 @@ export default function Mainapp() {
 				languageTags
 				videoInterface
 			   */}
-			<Navbar />
 			<Languagetags items={["ENGLISH","SPANISH"]} />
 			<VideoCallComponent/>
 			<ChatComponent/>
