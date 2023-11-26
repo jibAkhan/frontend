@@ -17,7 +17,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/app" element={<Mainapp />}/>
-				<Route path="/room/:roomID" caseSensitive={false} element={<Room />} />
+				<Route path="/room/:roomID" caseSensitive={false} element={<Room  />} />
 				<Route path="/*" element ={<ErrorPage/>}/>
 			</Routes>
 		</Router>

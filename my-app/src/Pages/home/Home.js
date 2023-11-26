@@ -13,6 +13,7 @@ const Home = () => {
 
   const handleLanguageChange2 = (language) => {
     console.log(`Selected language 2: ${language}`);
+	 window.location.replace('/app')
     setSelectedLanguage2(language);
   };
 

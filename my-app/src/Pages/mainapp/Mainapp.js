@@ -20,10 +20,9 @@ export default function Mainapp() {
 			   */}
 			<Languagetags items={["ENGLISH","SPANISH"]} />
 			<VideoCallComponent/>
-			<ChatComponent/>
 			{roomID != null && <Room roomID={roomID}/>}
 			{roomID == null && <CreateRoom setRoomID={setRoomID}/>}
-			<Popup msg="Would you like to send a friend request? " showPopup={true} />
+			<Popup msg="Would you like to send a friend request? " showPopup={false} />
 			<Footer /> 
 		</div>
 	);
