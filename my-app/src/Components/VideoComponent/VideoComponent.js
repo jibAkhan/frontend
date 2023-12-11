@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
+import "./VideoComponent.scss";
 
-const Room = (props) => {
+const VideoComponent = (props) => {
   const userVideo = useRef();
   const partnerVideo = useRef();
   const peerRef = useRef();
@@ -81,10 +82,12 @@ const Room = (props) => {
 
   return (
     <div>
-      <video autoPlay controls ref={userVideo}></video>
-      <video autoPlay controls ref={partnerVideo}></video>
+      <div className="videoContainer">
+        <video autoPlay controls ref={userVideo} className="userVideo"></video>
+        <video autoPlay controls ref={partnerVideo} className="partnerVideo"></video>
+      </div>
     </div>
   );
 };
 
-export default Room;
+export default VideoComponent;

@@ -1,0 +1,63 @@
+$font-primary: 'Agbalumo', sans-serif;
+$color-highlight: #e6e6e6;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  background-color: #041f37;
+  color: white;
+  height: 100px;
+  position: relative; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .brand {
+    color: $color-highlight;
+    font-size: 2.0em;
+    font-family: $font-primary;
+    align-items: flex-start;
+  }
+
+  .left-content,
+  .middle-content,
+  .right-content {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+      flex-basis: auto;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .left-content {
+    align-items: flex-start;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  .middle-content {
+    font-style: italic; 
+  }
+
+  .right-content {
+    align-items: flex-end;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+}

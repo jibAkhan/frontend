@@ -1,0 +1,33 @@
+.room {
+  display: flex;
+  flex-direction: row; 
+  align-items: stretch;
+  width: 100%; 
+  height: 100%;
+  padding: 20px; 
+  box-sizing: border-box; 
+  overflow: hidden;
+
+  .video-container {
+    flex: 0 0 50%; 
+    height: calc(100% - 20px); 
+    box-sizing: border-box; 
+  }
+
+  .chat-container {
+    flex: 0 0 50%; 
+    height: calc(100% - 20px); 
+    overflow-y: auto; 
+    box-sizing: border-box; 
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .video-container, .chat-container {
+      width: 100%;
+      flex-basis: auto;
+      height: auto; 
+    }
+  }
+}

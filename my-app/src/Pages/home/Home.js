@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row, Dropdown } from 'react-bootstrap';
-import './home.scss';
+import './Home.scss';
 
 const Home = () => {
   const [selectedLanguage1, setSelectedLanguage1] = useState(null);
@@ -13,6 +13,7 @@ const Home = () => {
 
   const handleLanguageChange2 = (language) => {
     console.log(`Selected language 2: ${language}`);
+	 window.location.replace('/app')
     setSelectedLanguage2(language);
   };
 

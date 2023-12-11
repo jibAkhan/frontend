@@ -1,5 +1,5 @@
 import React from 'react'
-import scss from "./Popup.scss"
+import "./Popup.scss"
 export default function Popup(props) {
   //const [showPopup, SetShowPopup]
   
