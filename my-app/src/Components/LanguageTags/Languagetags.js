@@ -1,5 +1,5 @@
 import React from 'react';
-import scss from "./Languagetags.scss"
+import "./Languagetags.scss"
 
 export default function Languagetags(props) {
 	return (

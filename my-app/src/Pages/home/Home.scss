@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+.HomePage {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 2.5em;
+    font-family: 'Agbalumo', sans-serif;
+    /* Adjust color */
+  }
+
+  .lead-text {
+    font-size: 1.5em;
+    margin-top: 20px;
+    
+  }
+
+  /* Styles for the new container and "I want to learn" text */
+  .learn-dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .learn-text {
+    margin-right: 10px;
+    justify-content: center;
+    font-size: 1.8em;
+    
+  }
+
+  /* Styles for the dropdown button and menu */
+  .dropdown {
+    display: inline-block;
+    position: relative;
+
+    .dropdown-toggle {
+      //background-image: linear-gradient(rgb(113, 88, 226), rgb(9, 9, 9));
+      background-color: #000000;
+      border-color: rgb(58,29,171) ;/* Adjust border color */
+      color: #ffffff; /* Adjust text color */
+      padding: 16px;
+      border-radius: 2px;
+    }
+
+    .dropdown-menu {
+      position: absolute; // Absolutely position within the relative container
+      left: 0; // Align to the left edge of the dropdown toggle
+      right: 0; // Align to the right edge of the dropdown toggle
+      width: auto; // Only as wide as necessary to fit the content
+      max-width: 100%; // Prevents the dropdown from being wider than the toggle button
+      background-color: rgb(58,29,171); // Adjust background color
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+      border-radius: 0.25em; // Adds rounded corners
+      padding: 0.5em 0; // Padding on top and bottom of the dropdown menu
+
+      .dropdown-item {
+        padding: 0.5em 1em; // Padding for each dropdown item
+        color: #ffffff; // Text color for items
+
+        &:hover {
+          background-color: #007bff; // Background color on hover
+          color: #fff; // Text color on hover
+        }
+      }
+    }
+  }
+}

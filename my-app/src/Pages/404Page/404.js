@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../../Components/Navbar/NavBar';
-import Footer from '../../Components/Footer/footerFile';
+//import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 import './404.scss';
 
 export default function ErrorPage()

@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import VideoCallComponent from "./VideoCallComponent.scss";
-import ChatComponent from "../ChatComponent/ChatComponent";
+import "./VideoComponent.scss";
 
-const Room = (props) => {
+const VideoComponent = (props) => {
   const userVideo = useRef();
   const partnerVideo = useRef();
   const peerRef = useRef();
@@ -82,15 +81,13 @@ const Room = (props) => {
   };
 
   return (
-	  <div>
-		  <div className="videoContainer">
-		  <video autoPlay controls ref={userVideo} className="userVideo"></video>
-		  <video autoPlay controls ref={partnerVideo} className="pertnerVideo"></video>
-		  <ChatComponent/>
-		  </div>
-      
+    <div>
+      <div className="videoContainer">
+        <video autoPlay controls ref={userVideo} className="userVideo"></video>
+        <video autoPlay controls ref={partnerVideo} className="partnerVideo"></video>
+      </div>
     </div>
   );
 };
 
-export default Room;
+export default VideoComponent;
