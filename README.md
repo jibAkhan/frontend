@@ -10,5 +10,5 @@
 
 # current collaborators
 
-Dylan Miller
+Dylan Miller,
 Tony Flores
