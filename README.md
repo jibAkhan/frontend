@@ -8,5 +8,7 @@
 ### `npm run eject`
 ### `npm run build` fails to minify
 
-#current collaborators
- 
+# current collaborators
+
+Dylan Miller
+Tony Flores
