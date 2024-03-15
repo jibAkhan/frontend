@@ -26,7 +26,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+  <div className="absolute inset-0 -z-10 h-full w-full bg-black [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
     <div className="relative">
       <div className="HomePage">
         <div className="content-container">
@@ -36,7 +36,7 @@ const Home = () => {
           </div>
           <div className="dropdown-container">
             <div className="max-w-sm mx-auto mr-4">
-              <label htmlFor="language1" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label htmlFor="language1" className="block mb-2 text-sm font-medium text-white-900 dark:text-white">
                 I want to learn
               </label>
               <select
@@ -54,7 +54,7 @@ const Home = () => {
               </select>
             </div>
             <div className="max-w-sm mx-auto">
-              <label htmlFor="language2" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label htmlFor="language2" className="block mb-2 text-sm font-medium text-white-900 dark:text-white">
                 I can teach
               </label>
               <select
