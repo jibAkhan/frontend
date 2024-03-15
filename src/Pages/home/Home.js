@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Col, Container, Row, Dropdown } from 'react-bootstrap';
-import './Home.scss';
+import './Home.css';
+import Flag from 'react-world-flags';
 
 const Home = () => {
   const [selectedLanguage1, setSelectedLanguage1] = useState(null);
@@ -13,66 +13,69 @@ const Home = () => {
 
   const handleLanguageChange2 = (language) => {
     console.log(`Selected language 2: ${language}`);
-	 window.location.replace('/app')
+    window.location.replace('/app');
     setSelectedLanguage2(language);
   };
 
-  const languages = ["English", "Spanish", "French", "German", "Chinese"]; // Add your supported languages
+  const languages = [
+    { name: 'English', code: 'gb' },
+    { name: 'Spanish', code: 'es' },
+    { name: 'French', code: 'fr' },
+    { name: 'German', code: 'de' },
+    { name: 'Chinese', code: 'cn' },
+  ];
 
   return (
-    <Container fluid className="contained HomePage">
-      <Row className="pb-5">
-        <Col md="6">
-          <div className="Home-Page">
-            <h1>LASSO</h1>
-            <p className="lead-text">
-              Learn a new language with ease.
-            </p>
-            
-            <div className="learn-dropdown-container">
-              <span className="learn-text">I want to learn</span>
-              <Dropdown>
-                <Dropdown.Toggle variant="secondary" id="dropdownLanguage1">
-                  {selectedLanguage1 ? selectedLanguage1 : "Select Language 1"}
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  {languages.map((language, index) => (
-                    <Dropdown.Item
-                      key={index}
-                      onClick={() => handleLanguageChange1(language)}
-                    >
-                      {language}
-                    </Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
-
-              {/* Second Dropdown with added spacing */}
-              <div className="learn-dropdown-container" style={{ marginLeft: '100px' }}>
-                <span className="learn-text">I can teach</span>
-                <Dropdown>
-                  <Dropdown.Toggle variant="secondary" id="dropdownLanguage2">
-                    {selectedLanguage2 ? selectedLanguage2 : "Select Language 2"}
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    {languages.map((language, index) => (
-                      <Dropdown.Item
-                        key={index}
-                        onClick={() => handleLanguageChange2(language)}
-                      >
-                        {language}
-                      </Dropdown.Item>
-                    ))}
-                  </Dropdown.Menu>
-                </Dropdown>
-              </div>
+    <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+    <div className="relative">
+      <div className="HomePage">
+        <div className="content-container">
+          <div className="heading-container">
+            <h1 className="text-4xl font-bold text-purple-700 mb-4 text-center">Lasso</h1>
+            <p className="text-lg text-gray-600 text-center">Learn a new language with ease.</p>
+          </div>
+          <div className="dropdown-container">
+            <div className="max-w-sm mx-auto mr-4">
+              <label htmlFor="language1" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                I want to learn
+              </label>
+              <select
+                id="language1"
+                className="dropdown-select"
+                value={selectedLanguage1}
+                onChange={(e) => handleLanguageChange1(e.target.value)}
+              >
+                <option value="">Choose a language</option>
+                {languages.map(({ name, code }) => (
+                  <option key={code} value={name} className="flex items-center justify-between">
+                    {name} <Flag code={code} className="ml-2" />
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="max-w-sm mx-auto">
+              <label htmlFor="language2" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                I can teach
+              </label>
+              <select
+                id="language2"
+                className="dropdown-select"
+                value={selectedLanguage2}
+                onChange={(e) => handleLanguageChange2(e.target.value)}
+              >
+                <option value="">Choose a language</option>
+                {languages.map(({ name, code }) => (
+                  <option key={code} value={name} className="flex items-center justify-between">
+                    {name} <Flag code={code} className="ml-2" />
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
+  </div>
   );
 };
 
