@@ -7,3 +7,6 @@
 ### `npm run build`
 ### `npm run eject`
 ### `npm run build` fails to minify
+
+#current collaborators
+ 
