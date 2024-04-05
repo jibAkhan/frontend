@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.AboutPage {
+  @apply flex flex-col items-center justify-center px-4 py-8 min-h-screen;
+}
+
+.content-container {
+  @apply flex flex-col items-start;
+}
+
+.heading-container {
+  @apply flex flex-col items-start mb-8;
+}
+
+.AboutPage h1 {
+  @apply text-4xl font-bold text-white mb-4 text-left;
+}
+
+.about-content {
+  @apply flex flex-col md:flex-row items-start justify-between;
+}
+
+.about-text {
+  @apply text-lg text-gray-200 mb-8 md:mb-0 md:mr-8 max-w-lg;
+}
+
+.about-image {
+  @apply max-w-xl;
+}
+
+/* Card Styles */
+.minip {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  background: var(--white);
+  position: relative;
+  box-shadow: 0px 0px 5px var(--terracotta);
+}
+
+.minip .mg {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  grid-template-columns: 250px 150px;
+  grid-template-rows: 100px 150px;
+  grid-template-areas: 
+    'clr group'
+    'clr .....';
+  transition:
+    grid-template-columns .6s linear,
+    grid-template-rows .6s linear;
+}
+
+.minip:hover .mg {
+  grid-template-columns: 150px 250px;
+  grid-template-rows: 50px 300px;
+  transition:
+    grid-template-columns .6s linear,
+    grid-template-rows .6s linear;
+}
+
+.minip .mg .clr {
+  grid-area: clr;
+  background: var(--green);
+}
+
+.minip .mg .group {
+  font: 14px/14px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minip .mg .group span {
+  display: block;
+  transform: rotate(180deg);
+  transition:
+    transform .6s linear;
+}
+
+.minip:hover .mg .group span {
+  transform: rotate(270deg);
+  transition:
+    transform .6s linear;
+}
+
+.minip .av {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: var(--green);
+  background-position: top center;
+  background-size: cover;
+  transition:
+    width .6s linear,
+    height .6s linear;
+}
+
+.minip:hover .av {
+  width: 350px;
+  height: 550px;
+  transition:
+    width .6s linear,
+    height .6s linear;
+}
+
+.minip .info {
+  width: 200px;
+  max-height: 100px;
+  padding: 25px;
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  background: var(--peach);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  transition: 
+    bottom .6s linear;
+}
+
+.minip:hover .info {
+  bottom: 50px;
+  transition:
+    bottom .6s linear;
+}
+
+.minip .info name {
+  display: block;
+  font: 200 30px/35px var(--display);
+  text-indent: -25px;
+  letter-spacing: 1px;
+  margin: 0px 0px 10px 25px;
+}
+
+.minip .info deets {
+  font: 12px/18px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.minip a.plot {
+  width: 130px;
+  height: 40px;
+  position: absolute;
+  bottom: 85px;
+  left: 85px;
+  background: var(--dgreen);
+  font: 12px/12px var(--mono);
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 
+    bottom .6s linear;
+}
+
+.minip:hover a.plot {
+  bottom: 35px;
+  transition: 
+    bottom .6s linear;
+}
